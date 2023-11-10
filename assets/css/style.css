@@ -258,7 +258,7 @@ width: 250px;
   .sec9 .title span {
     font-family: "Yellowtail";
     color: #7eb693;
-    font-size: 1.923rem;
+    font-size: 1.5625rem;
   }
   
   .sec2 .container .info {
@@ -267,12 +267,15 @@ width: 250px;
     gap: 20px 30px;
   }
   .sec2 .container .info h1 {
-    font-size: 1.5384rem;
+    font-size: 1.25rem;
     font-family: "Roboto";
     padding-bottom: 14.5px;
   }
   .sec2 .container p {
     color: #525c60;
+  }
+  .sec2 .container .about p{
+    max-width: 570px;
   }
   button {
     width: 180px;
