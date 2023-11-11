@@ -1105,6 +1105,7 @@ font-weight: 900;
     .hero img{
         background-color: black;
         opacity: 0.5;
+        zoom: 0.001;
     }
     .hero .herotext button{
         margin-top: 40px;
@@ -1204,7 +1205,8 @@ font-weight: 900;
           margin: auto;
         }
         .sec2 .img1 {
-          display: none;
+          width: 100%;
+          object-fit: cover;
         }
         .sec2 .img2 {
           display: block;
