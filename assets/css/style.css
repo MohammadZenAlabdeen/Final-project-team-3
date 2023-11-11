@@ -1318,6 +1318,7 @@ font-weight: 900;
             flex-wrap: wrap;
           }
           .sec7 .cards{
+            justify-content: center;
             flex-wrap: wrap;
           }
           .sec8,
@@ -1354,8 +1355,7 @@ font-weight: 900;
     }
     .restpages .herotext h1{
         font-size: 35px;
-    }
-    
+    } 
 
     .sec1 .card .text p{
         max-width: 200px;
