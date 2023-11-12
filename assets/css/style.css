@@ -237,8 +237,9 @@ width: 250px;
     max-width: 600px;
     position: absolute;
     left: 50%;
-    top: 10%;
     display: grid;
+    padding: 35px clamp(50px,5.1244vw,70px);
+    padding-left: 15px;
     gap: 20px;
   }
   .sec2 .container h1,
@@ -301,7 +302,7 @@ width: 250px;
   }
   .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, auto));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     justify-content: center;
     gap: 28px;
   }
@@ -393,10 +394,82 @@ width: 250px;
     background: white;
     
   }
+  .sec5{
+    position: relative;
+    margin-top: 80px;
+  }
+  .sec5 span {
+    color: #7eb693;
+    font-size: 25px;
+    font-family: 'Yellowtail', cursive;
+  }
+  .sec5 h1 {
+    color: #274c5b;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+  }
+  .sec5 .title {
+    line-height: 165.4%;
+  }
+  .sec5 h4 {
+    color: #274c5b;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .sec5 .img-png{
+    max-width: 834px;
+  }
+  .sec5 img{
+    width: 100%;
+  }
+  .sec5 .container {
+    position: absolute;
+
+    transform: translatey(-50%);
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    padding: 58px 80px 58px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+    border-radius: 20px;
+  }
+  .sec6 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 70px;
+
+  }
+  
+  .sec6 img {
+    width: 100%;
+   
+  }
+  .sec6 .img p {
+    position: relative;
+    top: -40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 200px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10%;
+    color: #274c5b;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+  }
   .sec9 {
     background-color: #274c5b;
     margin-top: 70px;
-    padding: 70px 0;
+    padding: 70px;
   }
   .sec9 .title {
     text-align: center;
@@ -418,10 +491,7 @@ width: 250px;
     padding-top: 27px;
     font-size: 20px;
   }
-  .sec4 .cards ,
-  .sec9 .cards{
-    grid-template-columns: repeat(4,minmax(280px , auto));
-  }
+   
   .sec10{
     margin: 130px 0;
   }
@@ -747,7 +817,6 @@ font-weight: 900;
     gap: 50px;
     align-items: center;
     margin-top: 100px;
-    margin-bottom: 100px;
     padding-right: 70px;
   }
 
@@ -867,8 +936,8 @@ font-size: 1rem;
  }
  .sec7 .cards{
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  gap: clamp(30px,2.19619vw,90px);
+  justify-content: center;
   align-items: center;
 
  }
@@ -978,6 +1047,9 @@ font-size: 20px;
   .sec7 .card img {
     width: 46.805px;
     height: 46px;
+  }
+  .sec8{
+    margin: 80px 0;
   }
   .sec8 h1 , .sec13 h1{
     color: #274c5b;
@@ -1218,6 +1290,26 @@ font-weight: 900;
         .sec4 .title h1 {
           font-size: 20px;
         }
+        .sec5{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+        }
+          .sec5 .container {
+          padding: 20px;    
+          position: static;
+          transform: translate(0);
+          text-align: center;
+        }
+      .sec5 img{
+      
+      padding: 0 20px;
+      }
+        .sec6 {
+          flex-wrap: wrap;
+          padding: 0 20px;
+        }
         .sec11 h1 , .sec11 p{
             text-align: center;
             margin: auto;
@@ -1331,7 +1423,7 @@ font-weight: 900;
 
     
 }
-@media  screen and (max-width:500px) {
+@media  screen and (max-width:600px) {
     nav{
         flex-wrap: wrap;
         gap: 25px;
